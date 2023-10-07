@@ -1,0 +1,35 @@
+{
+  "name": "megatarjeta",
+  "version": "1.0.0",
+  "description": "Consultas a MegaTarjeta",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "keywords": [
+    "megatarjeta",
+    "consulta",
+    "saldo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yohan205/megatarjeta.git"
+  },
+  "author": "YohanColla",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "puppeteer": "^21.3.8",
+    "random-useragent": "^0.5.0"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "bugs": {
+    "url": "https://github.com/Yohan205/megatarjeta/issues"
+  },
+  "homepage": "https://github.com/Yohan205/megatarjeta#readme"
+}
