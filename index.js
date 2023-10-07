@@ -9,6 +9,6 @@ const fs = require('fs');
 // Usen express server
 const app = require("./src/express");
 
-http.Server(app).listen(2023, () => {
+http.Server(app).listen(app.get('port'), () => {
     console.log('Server in port' , app.get('port'));
   })

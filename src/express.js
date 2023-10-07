@@ -18,6 +18,9 @@ app.use(express.json())
     .use(morgan('dev'));
 
 //Routers
+app.get('/', (req, res) => {
+    res.send('ONLINE')
+})
 app.use("/api", require("../routes/api.routes"));
 
 module.exports = app;
