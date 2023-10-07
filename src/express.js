@@ -5,11 +5,11 @@ const morgan = require('morgan');
 const path = require('path');
 const bodyParser = require('body-parser');
 
-const { URL } = require("./config");
+const { PORT } = require("./config");
 const app = express();
 
 // Settings
-app.set('port', 2023);
+app.set('port', PORT || 80);
 
 //Middlewares
 app.use(express.json())
