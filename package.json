@@ -4,6 +4,7 @@
   "description": "Consultas a MegaTarjeta",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "nodemon index.js"
   },
   "keywords": [

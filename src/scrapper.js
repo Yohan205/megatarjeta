@@ -28,6 +28,7 @@ const balanceMegatarjeta = async (tarjetaID) => {
 
     // if (page.url() != 'https://app4.utp.edu.co/pe/utp.php')
     //     throw new IncorrectData("Usuario y/o contrasela incorrectos");
+    if (page.isClosed()) throw new ErrorEvent("No se pudo completar la tarea");
 
     await new Promise( r => setTimeout(r, 600));
     const getSaldo = await page.evaluate( () => {
